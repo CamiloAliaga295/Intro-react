@@ -1,21 +1,15 @@
-import {Button, Card} from 'react-bootstrap';
+import {Container,Button} from 'react-bootstrap' 
+import './footer.css'
 
-const CardImage = props => {
-
-    const {title,coment,src } = props
-
-
+const Footer = () => {
     return (
-        <Card style={{ width: '18rem' }}>
-        <Card.Img  variant="top" src={src}/>
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>
-            {coment}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+<Container className= 'footer justify-content text-center'>
+
+    <h1>Todos los derechos reservados</h1>
+        <Button className='primary'>Siguenos aca</Button>
+</Container>
+
     )
 }
 
-export default CardImage
+export default Footer
